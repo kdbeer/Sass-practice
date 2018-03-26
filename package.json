@@ -1,0 +1,23 @@
+{
+  "name": "sass_practices",
+  "version": "1.0.0",
+  "description": "lading page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kridsadacpe/Sass-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kridsadacpe/Sass-practice/issues"
+  },
+  "homepage": "https://github.com/kridsadacpe/Sass-practice#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  },
+  "dependencies": {}
+}
