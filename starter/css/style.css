@@ -320,6 +320,8 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  .story img {
+    height: 100%; }
   .story > * {
     transform: skewX(12deg); }
   .story__shape {
@@ -331,8 +333,6 @@ body {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg); }
-  .story__img {
-    height: 100%; }
   .story__text {
     transform: skewX(12deg); }
 
