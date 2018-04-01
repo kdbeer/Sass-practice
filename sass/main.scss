@@ -4,12 +4,13 @@ Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485
 */
+
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-@import "base/base";
 @import "base/animation";
+@import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
@@ -21,12 +22,14 @@ Dark green: #28b485
 @import "components/form";
 @import "components/story";
 
-@import "layout/header";
+@import "layout/footer";
 @import "layout/grid";
+@import "layout/header";
 
 @import "pages/home";
-
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
