@@ -1,16 +1,16 @@
 @mixin clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 @mixin appCenter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 // MEDIA QUERY MANAGER
@@ -19,11 +19,8 @@
 // 901 - 1200       Tablet Landscape
 // [1201] - 1800    Normal Style Apply
 // 1800 - ...  Big  Desktop
-@mixin respond-phone {
-  @media (max-width: 600px) {
-    @content;
-  }
-}
+
+// ORDER: Base + typography > general layout + grid > page layout > component
 
 // breakpoint argument choice
 // -   phone
@@ -31,24 +28,28 @@
 // -   tab-land
 // -   big-desktop
 @mixin respond($breakpoint) {
-  @if $breakpoint==phone {
-    @media (max-width: 600px) {
-      @content;
+    @if $breakpoint==phone {
+        @media (max-width: 37.5em) {
+            // 600px
+            @content;
+        }
     }
-  }
-  @if $breakpoint==tab-port {
-    @media (max-width: 900px) {
-      @content;
+    @if $breakpoint==tab-port {
+        @media (max-width: 56.25em) {
+            // 900px
+            @content;
+        }
     }
-  }
-  @if $breakpoint==tab-land {
-    @media (max-width: 1200px) {
-      @content;
+    @if $breakpoint==tab-land {
+        @media (max-width: 75em) {
+            // 1200px
+            @content;
+        }
     }
-  }
-  @if $breakpoint==big-desktop {
-    @media (min-width: 1800px) {
-      @content;
+    @if $breakpoint==big-desktop {
+        @media (min-width: 112.5em) {
+            // 1800px
+            @content;
+        }
     }
-  }
 }

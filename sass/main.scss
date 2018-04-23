@@ -28,19 +28,7 @@ Dark green: #28b485
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-html {
-    font-size: 62.5%;
-    @include respond(phone) {}
-    @include respond(tab-port) {}
-    @include respond(tab-land) {}
-    @include respond(big-desktop) {}
-}
-
-body {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
