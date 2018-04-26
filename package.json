@@ -4,7 +4,9 @@
   "description": "lading page",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss starter/css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss starter/css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss starter/css/style.comp.css",
+    "concat:css": "concat -o starter/css/style.concat.css starter/css/icon-font.css starter/css/style.comp.css"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,10 @@
   },
   "homepage": "https://github.com/kridsadacpe/Sass-practice#readme",
   "devDependencies": {
-    "node-sass": "^4.8.3"
+    "autoprefixer": "^8.3.0",
+    "concat": "^1.0.3",
+    "node-sass": "^4.8.3",
+    "postcss-cli": "^5.0.0"
   },
   "dependencies": {}
 }
