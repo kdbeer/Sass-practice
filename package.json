@@ -6,7 +6,10 @@
   "scripts": {
     "watch:sass": "node-sass sass/main.scss starter/css/style.css -w",
     "compile:sass": "node-sass sass/main.scss starter/css/style.comp.css",
-    "concat:css": "concat -o starter/css/style.concat.css starter/css/icon-font.css starter/css/style.comp.css"
+    "concat:css":
+      "concat -o starter/css/style.concat.css starter/css/icon-font.css starter/css/style.comp.css",
+    "prefix:css":
+      "postcss --use autoprefixer 'last 10 versions' style.concat.css -o css/style.prefix.css"
   },
   "repository": {
     "type": "git",
