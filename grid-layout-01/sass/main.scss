@@ -31,7 +31,7 @@ Grey dark 3: #999
     main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
         div:first-child {
             grid-column: 1/3;
             grid-row: 1/3;

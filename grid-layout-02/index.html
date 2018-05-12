@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Grid layout practices 02</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-gap: 1em;
+        }
+
+        .wrapper>div {
+            padding: 1em;
+            background-color: #eee;
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe quas eius vero ducimus vel quos, voluptas rerum deleniti
+            autem ex quasi earum? Facilis optio similique id. Non, officiis minus officia deleniti neque, rerum velit fuga
+            deserunt eaque rem vero pariatur, laudantium accusantium dolor nam quo magnam amet animi magni eveniet nesciunt
+            voluptate. Inventore nam nisi dolores voluptas ea aliquam, quod earum vel, expedita maiores dicta eum consequatur
+            vero odit officiis tenetur delectus aspernatur et! Nesciunt doloribus ea mollitia natus!
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium laborum nesciunt alias quasi quo? Doloremque tempore
+            qui optio laborum id!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe quas eius vero ducimus vel quos, voluptas rerum deleniti
+            autem ex quasi earum? Facilis optio similique id. Non, officiis minus officia deleniti neque, rerum velit fuga
+            deserunt eaque rem vero pariatur, laudantium accusantium dolor nam quo magnam amet animi magni eveniet nesciunt
+            voluptate. Inventore nam nisi dolores voluptas ea aliquam, quod earum vel, expedita maiores dicta eum consequatur
+            vero odit officiis tenetur delectus aspernatur et! Nesciunt doloribus ea mollitia natus!
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium laborum nesciunt alias quasi quo? Doloremque tempore
+            qui optio laborum id!
+        </div>
+    </div>
+</body>
+
+</html>
