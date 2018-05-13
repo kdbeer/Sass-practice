@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Back Office Example</title>
+    <style>
+        html {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background: black;
+            font-family: sans-serif;
+            height: 100%;
+            padding-right: 30px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            color: #fff;
+            text-transform: uppercase;
+            border: 10px solid #fff;
+
+            max-width: 800px;
+            min-width: 400px;
+            min-height: 400px;
+            justify-content: center;
+
+        }
+
+        main .logo {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            font-size: 100px;
+            justify-items: center;
+            align-content: center;
+        }
+
+        main .logo .logo-main {
+            display: flex;
+            align-items: center;
+            font-size: 100%;
+        }
+
+        main .logo .logo-text {
+            grid-column: 1/3;
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+        }
+
+        .login {
+            background-color: white;
+            padding: 20px
+        }
+
+        .login * {
+            width: 100%;
+            background-color: white;
+            color: #777777;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+        }
+
+        .login form span {
+            width: 100%;
+            font-size: 40px;
+            background: transparent;
+            text-align: center;
+        }
+
+
+        .login input,
+        .login button {
+            align-self: stretch;
+            padding: 5px 0 5px 5px;
+            margin-bottom: 25px;
+        }
+
+        .login button {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="logo">
+            <div class="logo-main">B</div>
+            <div class="logo-main">A</div>
+            <div class="logo-main">C</div>
+            <div class="logo-main">K</div>
+            <div class="logo-text">office</div>
+        </div>
+        <div class="login">
+            <form action="#">
+
+                <span>Username</span>
+                <input type="text" name="username" id="username">
+
+                <span>Password</span>
+                <input type="password" name="password" id="password">
+
+                <button>
+                    sign in
+                </button>
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
